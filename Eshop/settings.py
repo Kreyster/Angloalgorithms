@@ -75,10 +75,16 @@ WSGI_APPLICATION = 'Eshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'TygaKmMC1ZU58rM4RbLs',
+        'HOST': 'containers-us-west-76.railway.app',
+        'PORT': '7503',
+
     }
 }
 
